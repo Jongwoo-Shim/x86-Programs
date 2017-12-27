@@ -13,6 +13,8 @@ _start:
     movl $1 , %eax
     int $0x80
 
+# Only needed if used in other programs
+.type factorial, @function
 factorial:
     pushl %ebp
     movl %esp, %ebp
